@@ -1,7 +1,7 @@
 import AppDataSource from '../src/config/typeorm.config';
 import { UserSeeder } from './user.seed';
 import { CitySeeder } from './city.seed';
-import { WeatherItemSeeder } from './weather.item.seed';
+import { WeatherItemSeeder } from './weather-item.seed';
 
 async function runSeeds() {
   try {

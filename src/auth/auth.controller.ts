@@ -1,6 +1,6 @@
 import { Controller, Post, Get, Body, Request } from '@nestjs/common';
 import { AuthService } from './auth.service';
-import { SkipAuthGuard } from './skip.auth.guard.decorator';
+import { SkipAuthGuard } from './skip-auth-guard.decorator';
 
 @Controller('auth')
 export class AuthController {

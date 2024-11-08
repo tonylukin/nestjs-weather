@@ -6,7 +6,7 @@ import {
 } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
 import { Reflector } from '@nestjs/core';
-import { SKIP_AUTH_KEY } from './skip.auth.guard.decorator';
+import { SKIP_AUTH_KEY } from './skip-auth-guard.decorator';
 import { JwtService } from '@nestjs/jwt';
 import { ConfigService } from '@nestjs/config';
 import { JwtStrategy } from './jwt.strategy';

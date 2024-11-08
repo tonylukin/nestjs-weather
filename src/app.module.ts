@@ -5,7 +5,7 @@ import { WeatherController } from './controllers/weather.controller';
 import { DataSource } from 'typeorm';
 import { typeOrmConfig } from './config/typeorm.config';
 import { AuthModule } from './auth/auth.module';
-import RequestLimitService from './services/request.limit.service';
+import RequestLimitService from './services/request-limit.service';
 import RedisClient from './services/redis';
 import Rabbitmq from './services/rabbitmq';
 import Mailer from './services/mailer';
@@ -19,7 +19,7 @@ import { JwtService } from '@nestjs/jwt';
   imports: [
     ConfigModule.forRoot({
       isGlobal: true,
-      envFilePath: '.env',
+      envFilePath: ['.env.local', '.env'],
     }),
     TypeOrmModule.forRootAsync({
       imports: [ConfigModule],

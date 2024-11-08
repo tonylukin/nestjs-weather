@@ -1,5 +1,5 @@
 import { DataSource } from 'typeorm';
-import { WeatherItem } from '../src/entities/weather.item.entity';
+import { WeatherItem } from '../src/entities/weather-item.entity';
 import { City } from '../src/entities/city.entity';
 
 export class WeatherItemSeeder {

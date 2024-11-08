@@ -1,8 +1,8 @@
 import { Controller, Get, Req, Res, Query } from '@nestjs/common';
 import { Request, Response } from 'express';
-import RequestLimitService from '../services/request.limit.service';
+import RequestLimitService from '../services/request-limit.service';
 import RedisClient from '../services/redis';
-import { WeatherItem } from '../entities/weather.item.entity';
+import { WeatherItem } from '../entities/weather-item.entity';
 import { DataSource } from 'typeorm';
 import { UserDecorator } from '../auth/user.decorator';
 import { User } from '../entities/user.entity';
